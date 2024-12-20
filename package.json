@@ -12,5 +12,8 @@
   ],
   "author": "ahsan ullah",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "prettier": "^3.4.2"
+  }
 }
