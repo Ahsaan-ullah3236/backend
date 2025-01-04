@@ -4,8 +4,8 @@ import connectDB from "./db/index.js";
 import { app } from "./app.js";
 
 dotenv.config({
-  path: './env',
-});
+  path: './env'
+})
 
 connectDB()
   .then(() => {
@@ -18,7 +18,8 @@ connectDB()
     })
   })
   .catch((err) => {
-    console.log("MongoDB connection is failed  !!! ", err);
+    console.log("MongoDB connection Error!!! ", err)
+
   });
 
 // one way connect db with mongoose and the second way is proffessional  create a different db file and import file in this file
