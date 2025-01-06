@@ -6,7 +6,7 @@ const asynchandler = (requesthandler) => {
   }
 }
 
-export { asynchandler }
+export {asynchandler}
 
 // with the help or try catch
 // const asynchandler = () => {};
