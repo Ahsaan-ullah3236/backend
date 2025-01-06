@@ -1,1 +1,1 @@
-export const DB_NAME = "backend_paroject"
+export const DB_NAME = "videotube"

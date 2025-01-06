@@ -1,7 +1,16 @@
 import { asynchandler } from "../utils/asynchandlers.js";
 
 const rejisterUser = asynchandler ( async (req,res) =>{
-    // get userDeatils from frontend 
+    res.status(200).json({
+        message: "ok"
+    })
+})
+
+export {
+    rejisterUser,
+}
+
+// get userDeatils from frontend 
     // validation 
     // check if user already exists: username ,emial
     // check for images ,check for avatar 
@@ -10,12 +19,3 @@ const rejisterUser = asynchandler ( async (req,res) =>{
     // remove password and refresh token field from response 
     // check for user creation 
     // return res
-
-
-    const  {fullName, email,username, password} = req.body
-    console.log("email", email);
-})
-
-export {
-    rejisterUser,
-}
